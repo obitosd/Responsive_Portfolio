@@ -1,6 +1,6 @@
 /*================= toggle icon navbar =========*/
 
-let nemuIcon = document.querySelector('#menu-icon');
+let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
@@ -33,7 +33,7 @@ window.onscroll = () => {
 
     /*================= sticky navbar =========*/
 
-    let header = document.querySelector('header');
+    let heading = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
 
@@ -55,5 +55,5 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .skills-containe, .project-box, .contact form', { origin: 'button' });
-ScrollReveal().reveal('.home-contact h1, .aboutpic,', { origin: 'left' });
+ScrollReveal().reveal('.home-contact h1, .about-img,', { origin: 'left' });
 ScrollReveal().reveal('.home-contact p, .about-content,', { origin: 'right' });
